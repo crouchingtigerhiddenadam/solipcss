@@ -1,2 +1,2 @@
 # solipcss
-Because no other CSS framework exists
+Because no other CSS framework exists :)

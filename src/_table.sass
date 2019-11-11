@@ -1,55 +1,28 @@
 table
-	border-spacing: 0
-	width: 100%
+  border-collapse: collapse
+  border-spacing: 0
+  margin: 0 0 2em 0
+  width: 100%
 
-td,
-th
-	border-bottom: .1rem solid $color-quinary
-	padding: 1.2rem 1.5rem
-	text-align: left
+  tbody
 
-	&:first-child
-		padding-left: 0
+    tr
+      border-bottom: 1px solid
 
-	&:last-child
-		padding-right: 0
+    tr:nth-child(2n + 1)
+      background-color: rgba(212, 212, 255, .035)
 
-@media screen and (max-width: 40.0rem)
-	table
-		border-spacing: 0
-		display: flex
-		width: 100%
+  td 
+    padding: .75em .75em
 
-	thead
-		border-right: solid .1rem $color-quinary
+  th
+    font-size: .9em
+    font-weight: 600
+    padding: 0 .75em .75em .75em
+    text-align: left
 
-	td,
-	th
-		padding-left: 0
+  thead
+    border-bottom: 2px solid
 
-		&:first-child
-			padding-left: 0
-
-		&:last-child
-			padding-right: 1.2rem
-
-	tbody
-		display: flex
-		overflow-x: auto
-		white-space: nowrap
-
-	tr
-		border-right: solid .1rem $color-quinary
-
-		&:last-child
-			border-right: none
-
-	td,
-	th
-		display: block
-
-		&:first-child
-			padding-left: 1.2rem
-
-		&:last-child
-			padding-right: 1.2rem
+  tfoot
+    border-top: 2px solid

@@ -23,17 +23,18 @@ input[type=submit] {
   border: 2px solid;
   cursor: pointer;
   display: inline-block;
+  font: inherit;
   font-size: 0.8em;
-  font-weight: 600;
-  height: 3.5em;
+  height: 3em;
   letter-spacing: 0.25em;
-  line-height: 3.5em;
+  line-height: 3em;
   padding: 0 1.75em;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  white-space: nowrap;
+  user-select: none;
   vertical-align: middle;
+  white-space: nowrap;
 }
 .button:focus, .button:hover,
 button:focus,
@@ -65,10 +66,10 @@ label {
   color: inherit;
   display: block;
   font-size: 0.8em;
-  font-weight: 600;
   letter-spacing: 0.25em;
-  margin: 0 0 1em 0;
+  margin: 0 0 0.25em 0;
   text-transform: uppercase;
+  user-select: none;
 }
 
 input[type=checkbox],
@@ -85,16 +86,16 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
+input[type=checkbox],
+input[type=radio] {
+  display: none;
+}
 input[type=checkbox] + label,
 input[type=radio] + label {
   cursor: pointer;
-  display: inline-block;
-  font-weight: 300;
-  height: 1.5em;
-  line-height: 1.5em;
   margin-right: 1.5em;
 }
 input[type=checkbox] + label:before,
@@ -141,7 +142,8 @@ input[type=search],
 input[type=tel],
 input[type=url],
 select {
-  height: 2.75em;
+  height: 2.5em;
+  line-height: 2.5em;
   padding: 0 1em;
 }
 
@@ -152,7 +154,6 @@ select {
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) center;
   cursor: pointer;
-  height: 2.75em;
   padding-right: 2.75em;
   text-overflow: ellipsis;
 }
@@ -302,27 +303,27 @@ i {
 }
 
 h1 {
-  font-size: 250%;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 175%;
+  font-size: 1.75em;
 }
 
 h3 {
-  font-size: 135%;
+  font-size: 1.35em;
 }
 
 h4 {
-  font-size: 110%;
+  font-size: 1.1em;
 }
 
 h5 {
-  font-size: 90%;
+  font-size: 0.9em;
 }
 
 h6 {
-  font-size: 70%;
+  font-size: 0.7em;
 }
 
 p {

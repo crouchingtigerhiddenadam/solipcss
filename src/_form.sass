@@ -2,10 +2,10 @@ label
   color: inherit
   display: block
   font-size: .8em
-  font-weight: 600
   letter-spacing: .25em
-  margin: 0 0 1em 0
+  margin: 0 0 .25em 0
   text-transform: uppercase
+  user-select: none
 
 input[type="checkbox"],
 input[type="email"],
@@ -21,17 +21,15 @@ textarea
   -webkit-appearance: none
   -ms-appearance: none
   appearance: none
-  margin-bottom: .5em
+  margin-bottom: .25em
 
 input[type="checkbox"],
 input[type="radio"]
 
+  display: none
+
   + label
     cursor: pointer
-    display: inline-block
-    font-weight: 300
-    height: 1.5em
-    line-height: 1.5em
     margin-right: 1.5em
 
   + label:before
@@ -73,7 +71,8 @@ input[type="search"],
 input[type="tel"],
 input[type="url"],
 select
-  height: 2.75em
+  height: 2.5em
+  line-height: 2.5em
   padding: 0 1em
 
 select
@@ -83,7 +82,6 @@ select
   background-repeat: no-repeat
   background-position: calc(100% - 1rem) center
   cursor: pointer
-  height: 2.75em
   padding-right: 2.75em
   text-overflow: ellipsis
 
